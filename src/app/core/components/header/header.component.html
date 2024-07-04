@@ -1,0 +1,46 @@
+<div class="pt-1 px-2 ">
+  <div
+    class=" grid grid-rows-1 grid-flow-row LA-borderColor LA-rounded tw-shadow-xl tw-shadow-blue-200/60 tw-w-[100%] pb-0">
+    <div class="col-start-1 col-end-2">
+      <img src="../../../../assets/img/logocliente.png" data-toggle="tooltip" title="Logo">
+    </div>
+    <div class="col-start-2 col-end-12">
+      <div class="grid grid-flow-row grid-rows-3">
+        <div class="grid grid-flow-col grid-rows-1 columns-9">
+          <div class="col-span-8">
+            <h4>NgAgro</h4>
+          </div>
+          <div class="grid grid-flow-col columns-3 justify-items-end pr-4">
+            <div class="px-0"><a href="https://lasistemas.com/" target="_blank" rel="noopener noreferrer">
+                <img src="../../../../assets/img/LA_SVG.svg" alt="LA Sistemas" style="width: 32px; height: 32px;"
+                  data-toggle="tooltip" title="LA Sistemas">
+              </a></div>
+            <div class="px-0"><img src="../../../../assets/img/spain_flags_flag_17068.png" alt="Español"
+                style="width: 2rem; height: 2rem;" data-toggle="tooltip" title="Idioma Español" class="pointer"
+                (click)="modificarIdioma('es')" id="idEspañol"></div>
+            <div class="px-0"><img src="../../../../assets/img/united_states_flags_flag_17080.png" alt="Inglés"
+                style="width: 2rem; height: 2rem;" data-toggle="tooltip" title="English language" class="pointer"
+                (click)="modificarIdioma('en')" id="idIngles"></div>
+          </div>
+        </div>
+        <div class="row-auto mt-1 py-0">
+          <div class="w-full pl-0">
+            <div class="LA-rounded LA-bgColor text-white pl-2" *ngIf="dameCalendario.visible">
+              {{dameCalendario.CadOut.Vehiculo}}
+            </div>
+          </div>
+        </div>
+        <div class="row-auto columns-2 py-0">
+          <div class="w-full">
+            <p class="mb-0">
+              <i class="fas fa-user LA-color-text"></i> {{usuarioactivo}}
+            </p>
+          </div>
+          <div class="w-full py-0">
+            <p class="mb-0 pr-4 text-right">
+              <i class="fas fa-calendar-alt LA-color-text"></i> {{dameCalendario.CadOut.Fecha}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,36 @@
+<div class="pt-1 px-1">
+  <div class="grid grid-flow-row w-[100%] px-1">
+    <div class="grid grid-flow-col columns-3 my-1">
+      <div class="LA-borderColor LA-rounded mx-1 text-center py-0"><small>Mes Ant</small>
+        <h6>{{montomesant}}</h6>
+      </div>
+      <div class="LA-borderColor LA-rounded mx-1 text-center py-0"><small>Mes Act</small>
+        <h6>{{montomes}}</h6>
+      </div>
+      <div class="LA-borderColor LA-rounded mx-1 text-center py-0"><small>T/C dia</small>
+        <h6>{{dameCalendario.CadOut.Tcdolar}}</h6>
+      </div>
+    </div>
+    <div class="grid grid-flow-col grid-cols-2 my-1 w-full">
+      <div class="flex flex-col w-full LA-borderColorVertical LA-rounded mx-1 LA-borderFooter-Grid ">
+        <div class="grid grid-flow-row  w-full">
+          <h2 class="top-II linea m-0" style="text-align: center;"><span class="px-2 LA-TextoOscuro">Ordenes USD</span></h2>
+          <div class="w-full">
+            <lvi-tabla-la [columnas]="dtColumnas" [datosX]="datosusd" [barraY]="'50vh'" [botones]="false"
+              [colorTH]="conectorService.info.BG_COLOR_OSCURO"></lvi-tabla-la>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col w-full LA-borderColorVertical LA-rounded mx-1 LA-borderFooter-Grid ">
+        <div class="grid grid-flow-row w-full">
+          <h2 class="top-II linea m-0" style="text-align: center;"><span class="px-2 LA-TextoOscuro">Ordenes VEB</span>
+          </h2>
+          <div>
+            <lvi-tabla-la [columnas]="dtColumnas" [datosX]="datosveb" [barraY]="'50vh'" [botones]="false"
+              [colorTH]="conectorService.info.BG_COLOR_OSCURO"></lvi-tabla-la>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

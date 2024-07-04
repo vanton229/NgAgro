@@ -1,0 +1,19 @@
+{
+  "URL_REST_LA": "http://laverserver.eastus.cloudapp.azure.com:8089/pview/PViewISAPI.dll/la/rest/TView/",
+  "URL_REST": "http://sboxlaconn.eastus2.cloudapp.azure.com/Pview/PViewISAPI.dll/la/rest/TView/",
+  "NUCLI": 329,
+  "MonBase": "VEF",
+  "BG_COLOR_OSCURO": "#17a2b8",
+  "BG_COLOR_CLARO": "#d1ecf1",
+  "COLOR_TEXT": "#0c5460",
+  "PROXY": {
+    "USARPROXY": "N",
+    "SERVER": "",
+    "PUERTO": 85
+  },
+  "Traductor": true,
+  "TRANSLATE": {
+    "URLTRANSLATE": "",
+    "IDTRANSLATE": ""
+  }
+}

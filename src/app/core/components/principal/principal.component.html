@@ -1,0 +1,29 @@
+<!--<div class="grid grid-flow-row  bg-slate-800 text-slate-400"> -->
+    <div class="grid grid-flow-row">
+    <div>
+        <app-header></app-header>
+    </div>
+    <div class="grid grid-flow-col">
+        <div class=" border-r-2">
+            <div>
+                <input type="date" [(ngModel)]="hasta"  (ngModelChange)="procesarFecha()" name="hasta">
+            </div>
+            <hr> 
+            <ul class="menu w-full rounded-box">
+                <li class="tw-hover-bordered hover:bg-[#17a2b8] hover:rounded-box hover:font-semibold hover:text-white"><a>
+                    <i class="fas fa-chart-line"></i>Pizarra</a></li>
+                <li class="tw-hover-bordered hover:bg-[#17a2b8] hover:rounded-box hover:font-semibold hover:text-white"><a>
+                    <i class="fas fa-tachometer-alt"></i>Dashboard</a></li>
+                <li class="tw-hover-bordered hover:bg-[#17a2b8] hover:rounded-box hover:font-semibold hover:text-white"><a (click)="salir()">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span traductorLA>Cerrar sesión</span> </a></li>
+              </ul>   
+        </div>
+        <div class="col-span-11">
+            <app-pizarra [datosveb]="ordenesveb" [datosusd]="ordenesusd" [montomes]="mtomes" [montomesant]="mtomesant" ></app-pizarra>
+           
+        </div>
+    </div>
+    <div class="w-[100%] border-t-2 pt-2"> <app-footer></app-footer></div>
+
+</div>
